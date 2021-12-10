@@ -11,8 +11,19 @@ header {
     text-align: center;
 }
 
+figure {
+    background: #f2f2f2 url("https://assets.codepen.io/6060109/athlete-girl.png") no-repeat center;
+    background-size: cover;
+}
+
 /* ID Selectors */
 
 #adidas-logo {
-    padding: 10px 0 10px 0;
+    padding-top: 18px;
+}
+
+#athlete {
+    background: #f2f2f2 url("https://assets.codepen.io/6060109/athlete-girl.png") no-repeat center;
+    background-size: cover;
+    height: 100px;
 }
