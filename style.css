@@ -3,8 +3,16 @@
 html, body {
     height: 100%;
     margin: 0;
+    background-color: #fff;
 }
 
-h1 {
-    color: blue;
+header {
+    width: 100%;
+    text-align: center;
+}
+
+/* ID Selectors */
+
+#adidas-logo {
+    padding: 10px 0 10px 0;
 }
