@@ -94,6 +94,11 @@ input[type="submit"] {
 
 /* Class Selectors */
 
+.all-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
 .all-content {
     padding: 32px;
 }
