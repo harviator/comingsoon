@@ -1,9 +1,25 @@
+/* Fonts */
+@font-face {
+    font-family: 'AdiHaus';
+    src: URL('https://assets.codepen.io/6060109/adihaus_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "AdiHaus";
+    src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
 /* Element Selectors */
 
 html, body {
     height: 100%;
     margin: 0;
     background-color: #fff;
+    font-family: "AdiHaus", "sans-serif";
 }
 
 header {
@@ -16,6 +32,76 @@ figure {
     background-size: cover;
 }
 
+h1, h2, p {
+    margin: 0;
+    font-weight: normal;
+}
+
+h1, h2 {
+    font-size: 48px;
+    letter-spacing: 5px;
+}
+
+h1 {
+    color: #CD3424;
+    line-height: 42px;
+    margin: 10px 0;
+}
+
+h2 {
+    color: #423A3A;
+    font-weight: bold;
+    line-height: 50px;
+    margin: 20px 0 15px 0;
+}
+
+p {
+    color: #333333;
+    font-size: 14px;
+    line-height: 28px;
+    margin: 20px 0 40px 0;
+}
+
+form {
+    display: flex;
+    border: 1px solid #333333;
+    border-radius: 3px;
+}
+
+input {
+    flex-grow: 2;
+    border: none;
+}
+
+input[type="email"] {
+    width: 75%;
+    height: 48px;
+    box-sizing: border-box;
+    padding: 0 24px;
+}
+
+input[type="submit"] {
+    width: 20%;
+    height: 48px;
+    box-sizing: border-box;
+    background-color: #333333;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    border-radius: 3px;
+}
+
+/* Class Selectors */
+
+.all-content {
+    padding: 32px;
+}
+
+.text-content {
+    text-align: center;
+}
+
 /* ID Selectors */
 
 #adidas-logo {
@@ -25,5 +111,5 @@ figure {
 #athlete {
     background: #f2f2f2 url("https://assets.codepen.io/6060109/athlete-girl.png") no-repeat center;
     background-size: cover;
-    height: 100px;
+    height: 250px;
 }
