@@ -26,11 +26,6 @@ body {
     display: flex;
 }
 
-/* header {
-    width: 100%;
-    text-align: center;
-} */
-
 h1, h2, p {
     margin: 0;
     font-weight: normal;
@@ -136,12 +131,6 @@ input[type="submit"] {
         background: #fff url("https://assets.codepen.io/6060109/waves.png");
         background-size: cover;
     }
-    
-    /* header {
-        text-align: left;
-        padding-top: 49px;
-        padding-left: 165px;
-    } */
 
     h1, h2 {
         font-size: 64px;
