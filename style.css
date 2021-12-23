@@ -15,11 +15,15 @@
 
 /* Element Selectors */
 
-html, body {
+html {
     height: 100%;
     margin: 0;
     background-color: #fff;
     font-family: "AdiHaus", "sans-serif";
+}
+
+body {
+    display: flex;
 }
 
 header {
@@ -113,8 +117,58 @@ input[type="submit"] {
     padding-top: 18px;
 }
 
-#athlete {
+#athlete-mobile {
     background: #f2f2f2 url("https://assets.codepen.io/6060109/athlete-girl.png") no-repeat center;
     background-size: cover;
     height: 250px;
+}
+
+
+
+/* Media Queries */
+
+@media only screen and (min-width: 768px) {
+    
+    /* Desktop 1 */
+
+    /* Element Selectors - Desktop 1 */
+    body {
+        margin: 0;
+        display: flex;
+        background: #fff url("https://assets.codepen.io/6060109/destop-bg.png") no-repeat center;
+        background-size: cover;
+    }
+    
+    header {
+        text-align: left;
+        padding-top: 49px;
+        padding-left: 165px;
+    }
+
+    /* Class Selectors - Desktop 1 */
+    #athlete-mobile {
+        display: none;
+    }
+    
+    .all-container {
+        width: 50%;
+    }
+
+    .all-content {
+        width: 400px;
+        /* height: 404px; */
+        padding: 137px 90px 200px 165px;
+    }
+
+    .text-content {
+        text-align: left;
+    }
+
+    /* ID Selectors - Desktop 1 */
+    #athlete-big {
+        width: 50%;
+        background: #f2f2f2 url("https://assets.codepen.io/6060109/athlete-big.png") no-repeat center;
+        background-size: cover;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 39% 100%);
+    }
 }
