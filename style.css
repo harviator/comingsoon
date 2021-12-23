@@ -42,7 +42,7 @@ h1, h2 {
 }
 
 h1 {
-    color: #CD3424;
+    color: #2F80ED;
     line-height: 42px;
     margin: 10px 0;
 }
@@ -83,10 +83,10 @@ input[type="submit"] {
     width: 20%;
     height: 48px;
     box-sizing: border-box;
-    background-color: #333333;
+    background: linear-gradient(315deg, rgba(51,51,51,1) 22%, rgba(117,117,117,1) 70%);
     color: #fff;
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 100;
+    font-size: 40px;
     line-height: 28px;
     border-radius: 3px;
 }
@@ -113,8 +113,8 @@ input[type="submit"] {
     display: block;
 }
 
-#athlete-mobile {
-    background: #f2f2f2 url("https://assets.codepen.io/6060109/athlete-girl.png") no-repeat center;
+#shoe-mobile {
+    background: #f2f2f2 url("https://assets.codepen.io/6060109/mobile-shoes.jpg") no-repeat center;
     background-size: cover;
     height: 250px;
 }
@@ -133,7 +133,7 @@ input[type="submit"] {
     body {
         margin: 0;
         display: flex;
-        background: #fff url("https://assets.codepen.io/6060109/destop-bg.png");
+        background: #fff url("https://assets.codepen.io/6060109/waves.png");
         background-size: cover;
     }
     
@@ -156,18 +156,13 @@ input[type="submit"] {
     }
 
     /* Class Selectors - Desktop 1 */
-    #athlete-mobile {
+    #shoe-mobile {
         display: none;
     }
     
     .all-container {
-        width: 50%;
+        width: 60%;
     }
-
-    /* .all-content {
-        width: 445px;
-        padding: 137px 0px 200px 165px;
-    } */
 
     .text-content {
         text-align: left;
@@ -179,11 +174,10 @@ input[type="submit"] {
         display: block;
     }
 
-    #athlete-desktop {
+    #shoe-desktop {
         display: block;
-        width: 50%;
-        background: #f2f2f2 url("https://assets.codepen.io/6060109/athlete-big.png") no-repeat center;
+        width: 40%;
+        background: #f2f2f2 url("https://assets.codepen.io/6060109/shoes.png") no-repeat center;
         background-size: cover;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 100%);
     }
 }
