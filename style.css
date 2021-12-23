@@ -15,7 +15,7 @@
 
 /* Element Selectors */
 
-html {
+html, body {
     height: 100%;
     margin: 0;
     background-color: #fff;
@@ -26,15 +26,10 @@ body {
     display: flex;
 }
 
-header {
+/* header {
     width: 100%;
     text-align: center;
-}
-
-figure {
-    background: #f2f2f2 url("https://assets.codepen.io/6060109/athlete-girl.png") no-repeat center;
-    background-size: cover;
-}
+} */
 
 h1, h2, p {
     margin: 0;
@@ -114,7 +109,8 @@ input[type="submit"] {
 /* ID Selectors */
 
 #adidas-logo {
-    padding-top: 18px;
+    margin: 15px auto;
+    display: block;
 }
 
 #athlete-mobile {
@@ -123,7 +119,9 @@ input[type="submit"] {
     height: 250px;
 }
 
-
+#athlete-desktop {
+    display: none;
+}
 
 /* Media Queries */
 
@@ -135,14 +133,26 @@ input[type="submit"] {
     body {
         margin: 0;
         display: flex;
-        background: #fff url("https://assets.codepen.io/6060109/destop-bg.png") no-repeat center;
+        background: #fff url("https://assets.codepen.io/6060109/destop-bg.png");
         background-size: cover;
     }
     
-    header {
+    /* header {
         text-align: left;
         padding-top: 49px;
         padding-left: 165px;
+    } */
+
+    h1, h2 {
+        font-size: 64px;
+    }
+
+    h2 {
+        line-height: 71px;
+    }
+
+    p {
+        font-size: 16px;
     }
 
     /* Class Selectors - Desktop 1 */
@@ -154,21 +164,26 @@ input[type="submit"] {
         width: 50%;
     }
 
-    .all-content {
-        width: 400px;
-        /* height: 404px; */
-        padding: 137px 90px 200px 165px;
-    }
+    /* .all-content {
+        width: 445px;
+        padding: 137px 0px 200px 165px;
+    } */
 
     .text-content {
         text-align: left;
     }
 
     /* ID Selectors - Desktop 1 */
-    #athlete-big {
+    #adidas-logo {
+        margin: 30px 30px 100px;
+        display: block;
+    }
+
+    #athlete-desktop {
+        display: block;
         width: 50%;
         background: #f2f2f2 url("https://assets.codepen.io/6060109/athlete-big.png") no-repeat center;
         background-size: cover;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 39% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 100%);
     }
 }
